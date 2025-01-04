@@ -1,0 +1,225 @@
+/*
+Theme Name: Custom Theme
+Theme URI: https://example.com
+Author: Misbah Ul Haq
+Author URI: https://misuart82.com
+Description: A custom WordPress theme.
+Version: 1.0
+Text Domain: custom-theme
+*/
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+  color: #040000;
+}
+
+h1,
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/*header section*/
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header_section .header_top {
+  padding: 15px 0;
+  background-color: #000000;
+}
+
+.header_section .header_top .contact_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_section .header_top .contact_nav a {
+  color: #ffffff;
+}
+
+.header_section .header_top .contact_nav a i {
+  color: #ff8a1d;
+}
+
+.header_section .header_bottom {
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-brand span {
+  color: #0355cc;
+  text-transform: uppercase;
+}
+
+.custom_nav-container {
+  padding: 0;
+}
+
+.custom_nav-container .navbar-nav {
+  margin-left: 0;
+}
+
+.custom_nav-container .navbar-nav ul {
+  display: flex;
+}
+
+.custom_nav-container .navbar-nav ul li {list-style: none;}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 10px 25px;
+  color: #000000;
+  text-align: center;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #0355cc;
+}
+
+.custom_nav-container .form-inline .nav_search-btn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  color: #000000;
+}
+
+.custom_nav-container .form-inline .nav_search-btn:hover {
+  color: #0355cc;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #000000;
+  margin: 7px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  top: -10px;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 0;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] .s-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0;
+  margin-bottom: -4px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] .s-2 {
+  display: none;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] .s-3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 0;
+  margin-top: -4px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="false"] .s-1,
+.custom_nav-container .navbar-toggler[aria-expanded="false"] .s-2,
+.custom_nav-container .navbar-toggler[aria-expanded="false"] .s-3 {
+  -webkit-transform: none;
+          transform: none;
+}
+
+
+
+/*end header section*/
+/* slider section */
+.slider_section {width: 100%; position: relative;}
+.slider_section .main-banner {width: 100%; height: 100%; position: relative;}
+.slider_section .main-banner img {width: 100%; height: 80vh;}
+.slider_section .main-banner-wrap {position: absolute; bottom: 20px; left: 0; right: 0; width: 100%; max-width: 95%; margin: 0 auto; display: flex; justify-content: space-between;}
+.slider_section .main-banner-wrap .main-heading {max-width: 50%; flex: 0 0 50%;}
+.slider_section .main-banner-wrap .main-heading h1 {font-size: 120px; line-height: 120px; letter-spacing: -5px; font-weight: 700; color: #ffffff; text-transform: uppercase;}
+
+.slider_section .main-banner-wrap .main-thumbnail {display: inline-flex; max-width: 47%; flex: 0 0 47%; align-items: end; justify-content: space-between;}
+
+.whoweare_section h2 {font-size: 48px; font-weight: 600; line-height: 48px; color: #000000; margin-bottom: 22px; text-transform: uppercase;}
+.whoweare_section h2 span {color: #005596;}
+.whoweare_section p {color: #0A0A0B; font-size: 18px; line-height: 36px;}
+
+.service-section {margin: 60px 0;}
+.service-section .item-box {background-color: #ffffff; border-radius: 10px; box-shadow: inset 0px -6px 2px 0px #005596; border-top: 3px solid #005596; min-height: 500px; padding: 16px;}
+.service-section .item-box img {border-radius: 10px 10px 0 0; margin-bottom: 24px;}
+.service-section .item-box h3 {color: #005596; font-size: 22px; letter-spacing: -1px; line-height: 31px;}
+
+footer#footer-section {background-color: #005596; padding: 20px;}
+footer#footer-section .foot-nav h3 {color: #ffffff; font-size: 16px;}
+footer#footer-section .foot-nav ul {margin: 0; padding: 0;}
+footer#footer-section .foot-nav ul li {list-style: none;}
+footer#footer-section .foot-nav ul li a {color: #ffffff; font-size: 16px;}
+
+
