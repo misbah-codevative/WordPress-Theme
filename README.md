@@ -1,0 +1,2 @@
+# Diligent-WordPress-Theme
+ 
